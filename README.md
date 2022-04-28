@@ -3,8 +3,8 @@
 - O SQS oferece dois tipos de filas de mensagens. As filas padrão (mais opções de subscription protocols, melhor performance, porém não garante a ordem das mensagens) e as filas FIFO (First In, First Out - menos opções de protocols, mas garante a ordem exata das mensagens).
 
 ## Clonando projeto de *torneseumprogramador*
-git clone https://github.com/torneseumprogramador/java_aws_sqs_producer_sender.git
-git clone https://github.com/torneseumprogramador/java_aws_sqs_consomer.git
+- git clone https://github.com/torneseumprogramador/java_aws_sqs_producer_sender.git
+- git clone https://github.com/torneseumprogramador/java_aws_sqs_consomer.git
 
 ## Configurando as variáveis de ambiente
 - configurar o .bash_profile ou .bashrc
