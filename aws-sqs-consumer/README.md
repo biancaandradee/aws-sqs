@@ -1,7 +1,7 @@
 # Consumer
 
 ## Clonando projeto
-git clone https://github.com/torneseumprogramador/java_aws_sqs_producer_sender.git
+git clone https://github.com/torneseumprogramador/java_aws_sqs_consomer.git
 
 ## Configurando as variáveis de ambiente
 - configurar o .bash_profile ou .bashrc
