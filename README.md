@@ -2,7 +2,7 @@
 - É um serviço de mensageria gerenciado que permite o desacoplamento e a escalabilidade de microsserviços, sistemas distribuídos e aplicações sem servidor.
 - O SQS oferece dois tipos de filas de mensagens. As filas padrão (mais opções de subscription protocols, melhor performance, porém não garante a ordem das mensagens) e as filas FIFO (First In, First Out - menos opções de protocols, mas garante a ordem exata das mensagens).
 
-## Clonando projeto
+## Clonando projeto de *torneseumprogramador*
 git clone https://github.com/torneseumprogramador/java_aws_sqs_producer_sender.git
 
 ## Configurando as variáveis de ambiente
