@@ -1,4 +1,4 @@
-package br.com.sqs_sender;
+package br.com.sqs;
 
 import static org.junit.Assert.assertTrue;
 

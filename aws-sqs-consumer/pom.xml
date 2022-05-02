@@ -4,38 +4,37 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>br.com.sqs_consumer</groupId>
-  <artifactId>sqs_consumer</artifactId>
+  <groupId>br.com.sqs</groupId>
+  <artifactId>sqs</artifactId>
   <version>1.0-SNAPSHOT</version>
 
-  <name>sqs_consomer</name>
+  <name>sqs</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>17</maven.compiler.source>
-    <maven.compiler.target>17</maven.compiler.target>
-		<java.version>17</java.version>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
 
-	<dependencyManagement>
-		<dependencies>
-			<dependency>
-				<groupId>software.amazon.awssdk</groupId>
-				<artifactId>bom</artifactId>
-				<version>2.2.0</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
-		</dependencies>
-	</dependencyManagement>
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>software.amazon.awssdk</groupId>
+        <artifactId>bom</artifactId>
+        <version>2.2.0</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
 
   <dependencies>
     <dependency>
-			<groupId>software.amazon.awssdk</groupId>
-			<artifactId>sqs</artifactId>
-		</dependency>
+      <groupId>software.amazon.awssdk</groupId>
+      <artifactId>sqs</artifactId>
+    </dependency>
 
     <dependency>
       <groupId>junit</groupId>
@@ -45,27 +44,7 @@
     </dependency>
   </dependencies>
 
-  
-
   <build>
-    <plugins>
-      <plugin>
-        <!-- Build an executable JAR -->
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-jar-plugin</artifactId>
-        <version>3.1.0</version>
-        <configuration>
-          <archive>
-            <manifest>
-              <addClasspath>true</addClasspath>
-              <!-- here we specify that we want to use the main method within the App class -->
-              <mainClass>br.com.sqs_consumer.App</mainClass>
-            </manifest>
-          </archive>
-        </configuration>
-      </plugin>
-    </plugins>
-
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
         <!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
